@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/912429bd8a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+
+
+<body>
+    <h3>Welcome {{Name}}</h3>
+
+    <div class="drag-area">
+        <div class="icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+        <header>Drag and Drop to Upload</header>
+
+        <form id="form-id">
+            <button class="custom-file-button">Browse</button>
+            <input id="file-upload" type="file" name="browsedfile" hidden>
+         
+            <button type="submit" id="btn-upload">Upload</button>
+        </form>
+        
+    </div>
+    
+
+
+
+   
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+
+</body>
+</html>

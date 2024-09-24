@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #ffbb2a;
+    flex-direction: column;
+}
+.drag-area{
+    border: 2px dashed #fff;
+    height: 500px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.custom-file-button {
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #e5e9e5;
+    color: black;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-upload{
+    width: 100px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #e5e9e5;
+    color: black;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.drag-area .icon{
+    font-size: 100px;
+    color: white;
+}
